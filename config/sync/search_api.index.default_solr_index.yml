@@ -1,0 +1,360 @@
+uuid: e1536b88-c12c-426a-962a-7fcc871c1207
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+    - search_api
+    - node
+  config:
+    - field.storage.node.field_bio_id
+    - field.storage.node.field_bio_nationality
+    - field.storage.node.field_bio_occupation
+    - field.storage.node.field_bio_references
+    - field.storage.node.field_bio_see
+    - field.storage.node.field_bio_summary
+    - field.storage.node.field_dates
+    - field.storage.node.field_p_author
+    - field.storage.node.field_p_identifier
+    - field.storage.node.field_p_month
+    - field.storage.node.field_p_number
+    - field.storage.node.field_p_pages
+    - field.storage.node.field_p_source
+    - field.storage.node.field_p_subject
+    - field.storage.node.field_p_volume
+    - field.storage.node.field_p_year
+    - search_api.server.ga_db_solr
+    - core.entity_view_mode.node.search_index
+_core:
+  default_config_hash: 5Mw79-jT1pHIsHxVF4JYxu5sQQxetSNms6EJCZB7dqY
+id: default_solr_index
+name: 'Default Solr content index'
+description: 'Default content index created by the Solr Search Defaults module'
+read_only: false
+field_settings:
+  rendered_item:
+    label: 'Rendered item'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: search_index
+          page: search_index
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 8
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+  changed:
+    label: Changed
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+  status:
+    label: 'Publishing status'
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+  sticky:
+    label: 'Sticky at top of lists'
+    datasource_id: 'entity:node'
+    property_path: sticky
+    type: boolean
+  author:
+    label: 'Author name'
+    datasource_id: 'entity:node'
+    property_path: 'uid:entity:name'
+    type: string
+    dependencies:
+      module:
+        - user
+  uid:
+    label: 'Author ID'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+  field_bio_id:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: field_bio_id
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_bio_id
+  field_bio_nationality:
+    label: Nationality
+    datasource_id: 'entity:node'
+    property_path: field_bio_nationality
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_bio_nationality
+  field_bio_occupation:
+    label: Occupation
+    datasource_id: 'entity:node'
+    property_path: field_bio_occupation
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_bio_occupation
+  field_bio_references:
+    label: References
+    datasource_id: 'entity:node'
+    property_path: field_bio_references
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_bio_references
+  field_bio_see:
+    label: See
+    datasource_id: 'entity:node'
+    property_path: field_bio_see
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_bio_see
+  field_bio_summary:
+    label: Summary
+    datasource_id: 'entity:node'
+    property_path: field_bio_summary
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_bio_summary
+  field_dates:
+    label: Dates
+    datasource_id: 'entity:node'
+    property_path: field_dates
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_dates
+  field_p_author:
+    label: Author
+    datasource_id: 'entity:node'
+    property_path: field_p_author
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_author
+  field_p_identifier:
+    label: Identifier
+    datasource_id: 'entity:node'
+    property_path: field_p_identifier
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_identifier
+  field_p_month:
+    label: Month
+    datasource_id: 'entity:node'
+    property_path: field_p_month
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_month
+  field_p_number:
+    label: Number
+    datasource_id: 'entity:node'
+    property_path: field_p_number
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_number
+  field_p_pages:
+    label: Pages
+    datasource_id: 'entity:node'
+    property_path: field_p_pages
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_pages
+  field_p_source:
+    label: Source
+    datasource_id: 'entity:node'
+    property_path: field_p_source
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_source
+  field_p_subject:
+    label: Subject
+    datasource_id: 'entity:node'
+    property_path: field_p_subject
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_subject
+  field_p_volume:
+    label: Volume
+    datasource_id: 'entity:node'
+    property_path: field_p_volume
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_volume
+  field_p_year:
+    label: Year
+    datasource_id: 'entity:node'
+    property_path: field_p_year
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_p_year
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - biography
+        - page
+        - periodical
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  ignorecase:
+    fields:
+      - rendered_item
+      - title
+      - author
+      - type
+      - field_bio_id
+      - field_bio_nationality
+      - field_bio_occupation
+      - field_bio_references
+      - field_bio_see
+      - field_bio_summary
+      - field_dates
+      - field_p_author
+      - field_p_identifier
+      - field_p_month
+      - field_p_number
+      - field_p_pages
+      - field_p_source
+      - field_p_subject
+      - field_p_volume
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: false
+  entity_status:
+    plugin_id: node_status
+    settings:
+      weights:
+        preprocess_index: -10
+  tokenizer:
+    fields:
+      - rendered_item
+      - title
+      - field_bio_references
+      - field_bio_summary
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+    all_fields: false
+  add_url:
+    plugin_id: add_url
+    settings:
+      weights:
+        preprocess_index: -30
+  aggregated_field:
+    plugin_id: aggregated_field
+    settings:
+      weights:
+        add_properties: 20
+  rendered_item:
+    plugin_id: rendered_item
+    settings:
+      weights:
+        add_properties: 0
+        pre_index_save: -10
+  html_filter:
+    fields:
+      - rendered_item
+      - title
+      - author
+      - type
+      - field_bio_id
+      - field_bio_nationality
+      - field_bio_occupation
+      - field_bio_references
+      - field_bio_see
+      - field_bio_summary
+      - field_dates
+      - field_p_author
+      - field_p_identifier
+      - field_p_month
+      - field_p_number
+      - field_p_pages
+      - field_p_source
+      - field_p_subject
+      - field_p_volume
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: false
+  content_access:
+    plugin_id: content_access
+    settings:
+      weights:
+        preprocess_index: -6
+        preprocess_query: -4
+    weights:
+      preprocess_query: -10
+  stemmer:
+    fields:
+      - rendered_item
+      - title
+      - field_bio_references
+      - field_bio_summary
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+    all_fields: false
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: ga_db_solr

@@ -1,0 +1,9 @@
+uuid: 1d368db5-d085-43dd-a184-9add00f291ea
+langcode: en
+status: true
+dependencies: {  }
+name: Nationality
+vid: nationality
+description: ''
+hierarchy: 0
+weight: 0

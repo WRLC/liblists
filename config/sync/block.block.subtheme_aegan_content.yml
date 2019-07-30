@@ -1,0 +1,22 @@
+uuid: d284d824-c0e6-4275-b87b-ec3ca083276d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subtheme_aegan
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: subtheme_aegan_content
+theme: subtheme_aegan
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

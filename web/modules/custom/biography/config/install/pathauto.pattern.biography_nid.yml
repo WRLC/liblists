@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: biography_nid
+label: 'Biography NID'
+type: 'canonical_entities:node'
+pattern: '/biographies/[node:nid]'
+selection_criteria:
+  1ebd9642-6783-4552-8ef0-1f3728026a3b:
+    id: node_type
+    bundles:
+      biography: biography
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1ebd9642-6783-4552-8ef0-1f3728026a3b
+selection_logic: and
+weight: -5
+relationships: {  }

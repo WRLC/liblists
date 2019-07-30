@@ -1,0 +1,22 @@
+uuid: 2e89c20f-07ff-4671-8153-afe950c90738
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aegan
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: aegan_content
+theme: aegan
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

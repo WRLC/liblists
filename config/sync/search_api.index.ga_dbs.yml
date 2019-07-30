@@ -1,0 +1,141 @@
+uuid: 7aede46f-7c3f-457d-a078-15cd56f4e82e
+langcode: en
+status: false
+dependencies:
+  config:
+    - field.storage.node.field_p_author
+    - field.storage.node.field_bio_summary
+    - field.storage.node.field_dates
+    - field.storage.node.field_bio_id
+    - field.storage.node.field_p_subject
+    - field.storage.node.field_p_year
+    - field.storage.node.field_p_volume
+    - field.storage.node.field_p_number
+    - field.storage.node.body
+    - field.storage.node.field_bio_nationality
+    - search_api.server.ga_db_solr
+  module:
+    - search_api
+    - node
+id: ga_dbs
+name: 'ga dbs'
+description: ''
+read_only: false
+field_settings:
+  field_p_author:
+    label: Author
+    datasource_id: 'entity:node'
+    property_path: field_p_author
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_author
+  field_bio_summary:
+    label: Summary
+    datasource_id: 'entity:node'
+    property_path: field_bio_summary
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_bio_summary
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+  field_dates:
+    label: Dates
+    datasource_id: 'entity:node'
+    property_path: field_dates
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_dates
+  field_bio_id:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: field_bio_id
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_bio_id
+  field_p_subject:
+    label: Subject
+    datasource_id: 'entity:node'
+    property_path: field_p_subject
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_subject
+  title_1:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+  field_p_year:
+    label: Year
+    datasource_id: 'entity:node'
+    property_path: field_p_year
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_p_year
+  field_p_volume:
+    label: Volume
+    datasource_id: 'entity:node'
+    property_path: field_p_volume
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_volume
+  field_p_number:
+    label: Number
+    datasource_id: 'entity:node'
+    property_path: field_p_number
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_number
+  field_p_subject_1:
+    label: Subject
+    datasource_id: 'entity:node'
+    property_path: field_p_subject
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_p_subject
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_bio_nationality:
+    label: Nationality
+    datasource_id: 'entity:node'
+    property_path: field_bio_nationality
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_bio_nationality
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: ga_db_solr

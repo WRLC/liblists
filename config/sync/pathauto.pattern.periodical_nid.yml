@@ -1,0 +1,22 @@
+uuid: 8a856c4d-5bf1-4030-be3e-e79aa01cb911
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: periodical_nid
+label: 'Periodical NID'
+type: 'canonical_entities:node'
+pattern: '/periodicals/[node:nid]'
+selection_criteria:
+  a1d2a8d8-f403-4bb8-9a78-15a8b44d4be5:
+    id: node_type
+    bundles:
+      periodical: periodical
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a1d2a8d8-f403-4bb8-9a78-15a8b44d4be5
+selection_logic: and
+weight: -5
+relationships: {  }

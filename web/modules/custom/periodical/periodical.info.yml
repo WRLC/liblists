@@ -1,0 +1,16 @@
+name: Periodical
+description: 'Provides Periodical content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - block
+  - facets
+  - field
+  - menu_ui
+  - node
+  - path
+  - pathauto
+  - search_api
+  - system
+  - user
+  - views

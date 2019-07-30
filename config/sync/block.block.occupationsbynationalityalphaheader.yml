@@ -1,0 +1,31 @@
+uuid: f6c987bd-89b4-48f8-a260-ca1d026c257c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c7a01f7e-4b79-41d5-8647-ca76573c8e5f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: occupationsbynationalityalphaheader
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:c7a01f7e-4b79-41d5-8647-ca76573c8e5f'
+settings:
+  id: 'block_content:c7a01f7e-4b79-41d5-8647-ca76573c8e5f'
+  label: 'Occupations by Nationality Alpha Header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/biographies/browse/nationality\r\n/biographies/browse/nationality/*"
+    negate: false
+    context_mapping: {  }

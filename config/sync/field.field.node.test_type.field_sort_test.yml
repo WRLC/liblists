@@ -1,0 +1,19 @@
+uuid: ee5ac4ab-d7d0-4ac1-ae40-a8c2f47aaec4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_test
+    - node.type.test_type
+id: node.test_type.field_sort_test
+field_name: field_sort_test
+entity_type: node
+bundle: test_type
+label: 'sort test'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

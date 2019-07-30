@@ -1,0 +1,29 @@
+uuid: fd433f09-9c86-4533-b5ce-0052e178af96
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.periodicals_by_year_search
+  module:
+    - system
+    - views
+  theme:
+    - subtheme_aegan
+id: exposedformperiodicals_by_year_searchpage_1
+theme: subtheme_aegan
+region: content
+weight: -3
+provider: null
+plugin: 'views_exposed_filter_block:periodicals_by_year_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:periodicals_by_year_search-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/periodicals/search\r\n/periodicals/search/results"
+    negate: false
+    context_mapping: {  }

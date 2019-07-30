@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.periodical.field_p_author
+    - field.field.node.periodical.field_p_identifier
+    - field.field.node.periodical.field_p_source
+    - field.field.node.periodical.field_p_subject
+    - field.field.node.periodical.field_p_volume
+    - node.type.periodical
+  module:
+    - user
+id: node.periodical.teaser
+targetEntityType: node
+bundle: periodical
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_p_author: true
+  field_p_identifier: true
+  field_p_source: true
+  field_p_subject: true
+  field_p_volume: true

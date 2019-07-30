@@ -1,0 +1,22 @@
+uuid: b2989140-5d78-476b-b1d9-532bec02337c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - subtheme_aegan
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: subtheme_aegan_local_tasks
+theme: subtheme_aegan
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

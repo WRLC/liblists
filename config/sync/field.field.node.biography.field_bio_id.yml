@@ -1,0 +1,19 @@
+uuid: 33f36d6b-b75d-40c2-819c-29087bb94835
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_id
+    - node.type.biography
+id: node.biography.field_bio_id
+field_name: field_bio_id
+entity_type: node
+bundle: biography
+label: ID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

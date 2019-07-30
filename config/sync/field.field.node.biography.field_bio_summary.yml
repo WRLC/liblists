@@ -1,0 +1,21 @@
+uuid: 12a1fc34-aa45-4f1c-8c67-93a556458422
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_summary
+    - node.type.biography
+  module:
+    - text
+id: node.biography.field_bio_summary
+field_name: field_bio_summary
+entity_type: node
+bundle: biography
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

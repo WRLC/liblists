@@ -1,0 +1,18 @@
+uuid: af86be11-5818-49f6-9b15-c1ace929bbbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.biography
+id: node.biography.title
+field_name: title
+entity_type: node
+bundle: biography
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

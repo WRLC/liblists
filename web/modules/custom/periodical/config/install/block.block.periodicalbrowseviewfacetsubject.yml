@@ -1,0 +1,33 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.periodical_browse_view_facet_subject
+  module:
+    - facets
+    - system
+  theme:
+    - aegan
+id: periodicalbrowseviewfacetsubject
+theme: aegan
+region: '-1'
+weight: -6
+provider: null
+plugin: 'facet_block:periodical_browse_view_facet_subject'
+settings:
+  id: 'facet_block:periodical_browse_view_facet_subject'
+  label: 'Periodical Browse View Facet Subject'
+  provider: facets
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-browse-test
+    negate: false
+    context_mapping: {  }
+  other_facet:
+    id: other_facet
+    facets: 'facet_block:source'
+    facet_value: ''
+    negate: false
+    context_mapping: {  }

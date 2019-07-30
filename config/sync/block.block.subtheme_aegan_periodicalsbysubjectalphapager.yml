@@ -1,0 +1,31 @@
+uuid: 38b1eec2-b8e0-47c3-bffc-213c1f946d7b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:12fdb02b-1138-4b2f-b9b0-4838750d24cf'
+  module:
+    - block_content
+    - system
+  theme:
+    - subtheme_aegan
+id: subtheme_aegan_periodicalsbysubjectalphapager
+theme: subtheme_aegan
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:12fdb02b-1138-4b2f-b9b0-4838750d24cf'
+settings:
+  id: 'block_content:12fdb02b-1138-4b2f-b9b0-4838750d24cf'
+  label: 'Periodicals by subject alpha pager'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/periodicals/browse/subject\r\n/periodicals/browse/subject/*"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,38 @@
+uuid: 951247e5-f0f9-4a7f-a251-02e4dedd69af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.periodical.field_p_author
+    - field.field.node.periodical.field_p_identifier
+    - field.field.node.periodical.field_p_month
+    - field.field.node.periodical.field_p_number
+    - field.field.node.periodical.field_p_pages
+    - field.field.node.periodical.field_p_source
+    - field.field.node.periodical.field_p_subject
+    - field.field.node.periodical.field_p_volume
+    - field.field.node.periodical.field_p_year
+    - node.type.periodical
+  module:
+    - user
+id: node.periodical.teaser
+targetEntityType: node
+bundle: periodical
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_p_author: true
+  field_p_identifier: true
+  field_p_month: true
+  field_p_number: true
+  field_p_pages: true
+  field_p_source: true
+  field_p_subject: true
+  field_p_volume: true
+  field_p_year: true

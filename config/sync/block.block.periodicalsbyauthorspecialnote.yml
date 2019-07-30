@@ -1,0 +1,31 @@
+uuid: 0431ec7f-931c-49ca-a8a9-e5449e82a450
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:04056790-aabd-442d-b99b-d8f0701400e8'
+  module:
+    - block_content
+    - system
+  theme:
+    - subtheme_aegan
+id: periodicalsbyauthorspecialnote
+theme: subtheme_aegan
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:04056790-aabd-442d-b99b-d8f0701400e8'
+settings:
+  id: 'block_content:04056790-aabd-442d-b99b-d8f0701400e8'
+  label: 'Periodicals by author special note'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/periodicals/browse/author\r\n/periodicals/browse/author/*"
+    negate: false
+    context_mapping: {  }

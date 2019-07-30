@@ -1,0 +1,30 @@
+uuid: 7d7fb32e-2694-4adc-803e-f67292e52a7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nationality.field_test
+    - taxonomy.vocabulary.nationality
+  module:
+    - text
+id: taxonomy_term.nationality.default
+targetEntityType: taxonomy_term
+bundle: nationality
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_test:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,31 @@
+uuid: 3d1a0de9-32ad-4fdc-ad98-4052f534ba85
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c7a01f7e-4b79-41d5-8647-ca76573c8e5f'
+  module:
+    - block_content
+    - system
+  theme:
+    - subtheme_aegan
+id: subtheme_aegan_occupationsbynationalityalphaheader
+theme: subtheme_aegan
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:c7a01f7e-4b79-41d5-8647-ca76573c8e5f'
+settings:
+  id: 'block_content:c7a01f7e-4b79-41d5-8647-ca76573c8e5f'
+  label: 'Occupations by Nationality Alpha Header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/biographies/browse/nationality\r\n/biographies/browse/nationality/a\r\n/biographies/browse/nationality/b\r\n/biographies/browse/nationality/c\r\n/biographies/browse/nationality/d\r\n/biographies/browse/nationality/e\r\n/biographies/browse/nationality/f\r\n/biographies/browse/nationality/g\r\n/biographies/browse/nationality/h\r\n/biographies/browse/nationality/i\r\n/biographies/browse/nationality/j\r\n/biographies/browse/nationality/k\r\n/biographies/browse/nationality/l\r\n/biographies/browse/nationality/m\r\n/biographies/browse/nationality/n\r\n/biographies/browse/nationality/o\r\n/biographies/browse/nationality/p\r\n/biographies/browse/nationality/q\r\n/biographies/browse/nationality/r\r\n/biographies/browse/nationality/s\r\n/biographies/browse/nationality/t\r\n/biographies/browse/nationality/u\r\n/biographies/browse/nationality/v\r\n/biographies/browse/nationality/w\r\n/biographies/browse/nationality/x\r\n/biographies/browse/nationality/y\r\n/biographies/browse/nationality/z\r\n/biographies/browse/nationality/a/*\r\n/biographies/browse/nationality/b/*\r\n/biographies/browse/nationality/c/*\r\n/biographies/browse/nationality/d/*\r\n/biographies/browse/nationality/e/*\r\n/biographies/browse/nationality/f/*\r\n/biographies/browse/nationality/g/*\r\n/biographies/browse/nationality/h/*\r\n/biographies/browse/nationality/i/*\r\n/biographies/browse/nationality/j/*\r\n/biographies/browse/nationality/k/*\r\n/biographies/browse/nationality/l/*\r\n/biographies/browse/nationality/m/*\r\n/biographies/browse/nationality/n/*\r\n/biographies/browse/nationality/o/*\r\n/biographies/browse/nationality/p/*\r\n/biographies/browse/nationality/q/*\r\n/biographies/browse/nationality/r/*\r\n/biographies/browse/nationality/s/*\r\n/biographies/browse/nationality/t/*\r\n/biographies/browse/nationality/u/*\r\n/biographies/browse/nationality/v/*\r\n/biographies/browse/nationality/w/*\r\n/biographies/browse/nationality/x/*\r\n/biographies/browse/nationality/y/*\r\n/biographies/browse/nationality/z/*"
+    negate: false
+    context_mapping: {  }

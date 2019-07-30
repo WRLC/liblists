@@ -1,0 +1,31 @@
+.facets-dropdown {width:150px; margin-bottom: 20px;}
+ul.menu {
+    list-style: none outside;
+    margin-left: 1.5em !important;
+    padding: 0;
+    text-align: left;
+}
+
+.node--type-periodical {border-bottom: 1px solid silver; padding-bottom: 10px;}
+
+body {
+    background: none;
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 2em;
+    color: #444;
+}
+.pager li>a, .pager li>span {
+    display: inline-block;
+    padding: 15px 10px !important;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.letter a{font-size: 28px; margin:2px 2px;}
+
+hgroup#sitename h2 {
+    font-size: 1.5em !important;
+}

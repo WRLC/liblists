@@ -1,0 +1,31 @@
+uuid: f5a75fe3-97dc-4c45-b584-535364fcf611
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5877d811-7eb8-4c90-bdcc-15ae5d89df14'
+  module:
+    - block_content
+    - system
+  theme:
+    - subtheme_aegan
+id: subtheme_aegan_biographiesbynamealphapager
+theme: subtheme_aegan
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:5877d811-7eb8-4c90-bdcc-15ae5d89df14'
+settings:
+  id: 'block_content:5877d811-7eb8-4c90-bdcc-15ae5d89df14'
+  label: 'Biographies by Name alpha pager'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/biographies/browse\r\n/biographies/browse/a\r\n/biographies/browse/b\r\n/biographies/browse/c\r\n/biographies/browse/d\r\n/biographies/browse/e\r\n/biographies/browse/f\r\n/biographies/browse/g\r\n/biographies/browse/h\r\n/biographies/browse/i\r\n/biographies/browse/j\r\n/biographies/browse/k\r\n/biographies/browse/l\r\n/biographies/browse/m\r\n/biographies/browse/n\r\n/biographies/browse/o\r\n/biographies/browse/p\r\n/biographies/browse/q\r\n/biographies/browse/r\r\n/biographies/browse/s\r\n/biographies/browse/t\r\n/biographies/browse/u\r\n/biographies/browse/v\r\n/biographies/browse/w\r\n/biographies/browse/x\r\n/biographies/browse/y\r\n/biographies/browse/z\r\n/biographies/browse/a/*\r\n/biographies/browse/b/*\r\n/biographies/browse/c/*\r\n/biographies/browse/d/*\r\n/biographies/browse/e/*\r\n/biographies/browse/f/*\r\n/biographies/browse/g/*\r\n/biographies/browse/h/*\r\n/biographies/browse/i/*\r\n/biographies/browse/j/*\r\n/biographies/browse/k/*\r\n/biographies/browse/l/*\r\n/biographies/browse/m/*\r\n/biographies/browse/n/*\r\n/biographies/browse/o/*\r\n/biographies/browse/p/*\r\n/biographies/browse/q/*\r\n/biographies/browse/r/*\r\n/biographies/browse/s/*\r\n/biographies/browse/t/*\r\n/biographies/browse/u/*\r\n/biographies/browse/v/*\r\n/biographies/browse/w/*\r\n/biographies/browse/x/*\r\n/biographies/browse/y/*\r\n/biographies/browse/z/*"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.periodical_browse_view_facet_volume
+  module:
+    - facets
+    - system
+  theme:
+    - aegan
+id: periodicalbrowseviewfacetvolume
+theme: aegan
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:periodical_browse_view_facet_volume'
+settings:
+  id: 'facet_block:periodical_browse_view_facet_volume'
+  label: Volume
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-browse-test
+    negate: false
+    context_mapping: {  }

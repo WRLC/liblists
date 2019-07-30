@@ -1,0 +1,37 @@
+uuid: f3b4541c-ae6f-4683-a6ad-d28c8fbaa421
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.test_type.body
+    - field.field.node.test_type.field_sort_test
+    - node.type.test_type
+  module:
+    - text
+    - user
+id: node.test_type.default
+targetEntityType: node
+bundle: test_type
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sort_test:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

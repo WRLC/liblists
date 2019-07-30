@@ -1,0 +1,20 @@
+uuid: 457bcc77-7d7c-4a44-93fd-190f901bfd24
+langcode: en
+status: true
+dependencies:
+  theme:
+    - subtheme_aegan
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: subtheme_aegan_page_title
+theme: subtheme_aegan
+region: content
+weight: -12
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

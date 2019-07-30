@@ -1,0 +1,22 @@
+uuid: e1b33d44-886e-450c-9d4e-ab355881c4a5
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - aegan
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: aegan_powered
+theme: aegan
+region: header
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

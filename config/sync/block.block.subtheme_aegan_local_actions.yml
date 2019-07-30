@@ -1,0 +1,20 @@
+uuid: e4d462f8-13e8-4b9f-8030-cd130954547e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - subtheme_aegan
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: subtheme_aegan_local_actions
+theme: subtheme_aegan
+region: content
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

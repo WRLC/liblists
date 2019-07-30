@@ -1,0 +1,31 @@
+uuid: 81672f00-58cd-4fcb-9a1a-cc72df56cb5b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:46bcc224-f4a2-4793-84d8-9d5809889e68'
+  module:
+    - block_content
+    - system
+  theme:
+    - aegan
+id: periodicalsalphapager
+theme: aegan
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:46bcc224-f4a2-4793-84d8-9d5809889e68'
+settings:
+  id: 'block_content:46bcc224-f4a2-4793-84d8-9d5809889e68'
+  label: 'Periodicals Alpha Pager'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/periodicals/browse\r\n/periodicals/browse/a\r\n/periodicals/browse/b\r\n/periodicals/browse/c\r\n/periodicals/browse/d\r\n/periodicals/browse/e\r\n/periodicals/browse/f\r\n/periodicals/browse/g\r\n/periodicals/browse/h\r\n/periodicals/browse/i\r\n/periodicals/browse/j\r\n/periodicals/browse/k\r\n/periodicals/browse/l\r\n/periodicals/browse/m\r\n/periodicals/browse/n\r\n/periodicals/browse/o\r\n/periodicals/browse/p\r\n/periodicals/browse/q\r\n/periodicals/browse/r\r\n/periodicals/browse/s\r\n/periodicals/browse/t\r\n/periodicals/browse/u\r\n/periodicals/browse/v\r\n/periodicals/browse/w\r\n/periodicals/browse/x\r\n/periodicals/browse/y\r\n/periodicals/browse/z\r\n/periodicals/browse/a/*\r\n/periodicals/browse/b/*\r\n/periodicals/browse/c/*\r\n/periodicals/browse/d/*\r\n/periodicals/browse/e/*\r\n/periodicals/browse/f/*\r\n/periodicals/browse/g/*\r\n/periodicals/browse/h/*\r\n/periodicals/browse/i/*\r\n/periodicals/browse/j/*\r\n/periodicals/browse/k/*\r\n/periodicals/browse/l/*\r\n/periodicals/browse/m/*\r\n/periodicals/browse/n/*\r\n/periodicals/browse/o/*\r\n/periodicals/browse/p/*\r\n/periodicals/browse/q/*\r\n/periodicals/browse/r/*\r\n/periodicals/browse/s/*\r\n/periodicals/browse/t/*\r\n/periodicals/browse/u/*\r\n/periodicals/browse/v/*\r\n/periodicals/browse/w/*\r\n/periodicals/browse/x/*\r\n/periodicals/browse/y/*\r\n/periodicals/browse/z/*"
+    negate: false
+    context_mapping: {  }

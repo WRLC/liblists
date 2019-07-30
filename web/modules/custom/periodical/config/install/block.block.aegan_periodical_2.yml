@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.periodical
+  module:
+    - facets
+    - system
+  theme:
+    - aegan
+id: aegan_periodical_2
+theme: aegan
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'facet_block:periodical'
+settings:
+  id: 'facet_block:periodical'
+  label: Periodical
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /periodicals/search
+    negate: false
+    context_mapping: {  }

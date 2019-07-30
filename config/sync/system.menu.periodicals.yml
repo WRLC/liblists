@@ -1,0 +1,8 @@
+uuid: eea37f1e-3cb0-489a-b5a5-47b8a31751d2
+langcode: en
+status: true
+dependencies: {  }
+id: periodicals
+label: Periodicals
+description: 'Views of periodical content'
+locked: false

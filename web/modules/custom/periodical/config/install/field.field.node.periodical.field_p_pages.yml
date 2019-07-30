@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_p_pages
+    - node.type.periodical
+id: node.periodical.field_p_pages
+field_name: field_p_pages
+entity_type: node
+bundle: periodical
+label: Pages
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

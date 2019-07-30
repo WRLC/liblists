@@ -1,0 +1,34 @@
+uuid: ca80307b-74d1-4dc6-8b92-ab2f9768bce6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.biography.field_bio_id
+    - field.field.node.biography.field_bio_nationality
+    - field.field.node.biography.field_bio_occupation
+    - field.field.node.biography.field_bio_references
+    - field.field.node.biography.field_bio_see
+    - field.field.node.biography.field_bio_summary
+    - field.field.node.biography.field_dates
+    - node.type.biography
+  module:
+    - user
+id: node.biography.teaser
+targetEntityType: node
+bundle: biography
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bio_id: true
+  field_bio_nationality: true
+  field_bio_occupation: true
+  field_bio_references: true
+  field_bio_see: true
+  field_bio_summary: true
+  field_dates: true

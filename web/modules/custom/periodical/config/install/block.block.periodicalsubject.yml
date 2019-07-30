@@ -1,0 +1,27 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.periodical_subject
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+id: periodicalsubject
+theme: bartik
+region: '-1'
+weight: -10
+provider: null
+plugin: 'facet_block:periodical_subject'
+settings:
+  id: 'facet_block:periodical_subject'
+  label: 'Periodical Subject'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /periodicals/search
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,5 @@
+name: batch_example
+type: module
+description: Example module for batch process
+core: 8.x
+package: Example

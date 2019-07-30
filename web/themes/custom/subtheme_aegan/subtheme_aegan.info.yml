@@ -1,0 +1,32 @@
+name: 'subtheme_aegan'
+type: theme
+description: 'A Subtheme for GA Libraries</a>.'
+base theme: aegan
+# core: 8.x
+libraries:
+  - subtheme_aegan/aegan-bootstrap
+  - subtheme_aegan/global-css
+
+# Regions
+regions:
+  header: Header
+  header_right: Header Right
+  primary_menu: Primary Menu
+  breadcrumb: Breadcrumb
+  content_top: Content Top
+  sidebar_first: First Sidebar
+  content: Content
+  sidebar_second: Second Sidebar
+  content_bottom: Content Bottom
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_fourth: Footer Fourth
+  footer: Footer
+
+
+# Information added by Drupal.org packaging script on 2016-09-12
+version: '8.x-1.0'
+core: '8.x'
+project: 'subtheme_aegan'
+datestamp: 1473665357

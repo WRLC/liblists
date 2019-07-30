@@ -1,0 +1,31 @@
+uuid: 0e6de94b-3ff9-448f-b89f-409d6ef00afa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b0b62b21-c96e-41ac-a096-a58b9faa3f2a'
+  module:
+    - block_content
+    - system
+  theme:
+    - aegan
+id: periodicalsbyauthoralphapager
+theme: aegan
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:b0b62b21-c96e-41ac-a096-a58b9faa3f2a'
+settings:
+  id: 'block_content:b0b62b21-c96e-41ac-a096-a58b9faa3f2a'
+  label: 'Periodicals by Author Alpha Pager'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/periodicals/browse/author\r\n/periodicals/browse/author/*"
+    negate: false
+    context_mapping: {  }

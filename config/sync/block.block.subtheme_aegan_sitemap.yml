@@ -1,0 +1,29 @@
+uuid: 4f066c0c-8c8e-4967-ae10-3d65e0680430
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.site-map
+  module:
+    - system
+  theme:
+    - subtheme_aegan
+id: subtheme_aegan_sitemap
+theme: subtheme_aegan
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'system_menu_block:site-map'
+settings:
+  id: 'system_menu_block:site-map'
+  label: 'Site map'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/56361\r\n/biographies\r\n/biographies/*\r\n/biographies/browse\r\n/biographies/browse/*\r\n/biographies/search\r\n/biographies/search/*\r\n/periodicals\r\n/periodicals/*\r\n/periodicals/browse\r\n/periodicals/browse/*\r\n/periodicals/search\r\n/periodicals/search/*\r\n/periodicals/periodicals-by-volume\r\n\r\n"
+    negate: false
+    context_mapping: {  }

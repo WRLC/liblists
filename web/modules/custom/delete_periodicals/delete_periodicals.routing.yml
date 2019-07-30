@@ -1,0 +1,7 @@
+delete_periodicals.delete_example:
+  path: '/delete_periodicals/delete'
+  defaults:
+    _form: '\Drupal\delete_periodcals
+    _title: 'Delete Periodicals'
+  requirements:
+    _permission: 'access content'

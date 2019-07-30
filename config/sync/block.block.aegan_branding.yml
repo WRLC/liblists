@@ -1,0 +1,25 @@
+uuid: 4bf38f26-971f-4280-bfa1-dfcdbd17d9be
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aegan
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: aegan_branding
+theme: aegan
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

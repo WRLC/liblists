@@ -1,0 +1,22 @@
+uuid: be05cce3-47f5-4da6-97ac-3d747c0f3665
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - subtheme_aegan
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: subtheme_aegan_help
+theme: subtheme_aegan
+region: content
+weight: -13
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

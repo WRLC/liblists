@@ -1,0 +1,29 @@
+uuid: f53912df-8c84-4563-8357-f3c0754e7a26
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_b
+  module:
+    - system
+    - views
+  theme:
+    - subtheme_aegan
+id: exposedformsearch_bpage_1
+theme: subtheme_aegan
+region: content
+weight: -4
+provider: null
+plugin: 'views_exposed_filter_block:search_b-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_b-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/biographies/search\r\n/biographies/search/results"
+    negate: false
+    context_mapping: {  }

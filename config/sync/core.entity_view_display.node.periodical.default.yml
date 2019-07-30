@@ -1,0 +1,83 @@
+uuid: 7a89e0d5-b31b-43aa-a288-f40afa285a9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.periodical.field_p_author
+    - field.field.node.periodical.field_p_identifier
+    - field.field.node.periodical.field_p_month
+    - field.field.node.periodical.field_p_number
+    - field.field.node.periodical.field_p_pages
+    - field.field.node.periodical.field_p_source
+    - field.field.node.periodical.field_p_subject
+    - field.field.node.periodical.field_p_volume
+    - field.field.node.periodical.field_p_year
+    - node.type.periodical
+  module:
+    - user
+id: node.periodical.default
+targetEntityType: node
+bundle: periodical
+mode: default
+content:
+  field_p_month:
+    weight: 108
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_number:
+    weight: 107
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_pages:
+    weight: 110
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_source:
+    weight: 105
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_subject:
+    weight: 102
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_volume:
+    weight: 106
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_year:
+    weight: 109
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  field_p_author: true
+  field_p_identifier: true
+  links: true

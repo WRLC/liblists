@@ -1,0 +1,19 @@
+uuid: 1f3fa3dc-0c6e-4f9b-bd47-95f64d6a3581
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_test
+    - taxonomy.vocabulary.nationality
+id: taxonomy_term.nationality.field_test
+field_name: field_test
+entity_type: taxonomy_term
+bundle: nationality
+label: test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

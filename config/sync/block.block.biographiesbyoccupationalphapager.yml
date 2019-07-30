@@ -1,0 +1,31 @@
+uuid: 751a0123-97c1-4f6f-b771-7586e43197ee
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c666aa22-df36-4be8-a7c4-9475b1feef9d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: biographiesbyoccupationalphapager
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:c666aa22-df36-4be8-a7c4-9475b1feef9d'
+settings:
+  id: 'block_content:c666aa22-df36-4be8-a7c4-9475b1feef9d'
+  label: 'Biographies by Occupation alpha pager '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /biographies/browse/occupation
+    negate: false
+    context_mapping: {  }

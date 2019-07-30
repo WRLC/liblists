@@ -1,0 +1,31 @@
+uuid: 35fcc85f-1c3b-44ae-8d83-70ecb02dc1d7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5877d811-7eb8-4c90-bdcc-15ae5d89df14'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: biographiesbynamealphapager
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:5877d811-7eb8-4c90-bdcc-15ae5d89df14'
+settings:
+  id: 'block_content:5877d811-7eb8-4c90-bdcc-15ae5d89df14'
+  label: 'Biographies by Name alpha pager'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /biographies/browse
+    negate: false
+    context_mapping: {  }

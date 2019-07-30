@@ -1,0 +1,72 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.biography.field_bio_id
+    - field.field.node.biography.field_bio_nationality
+    - field.field.node.biography.field_bio_occupation
+    - field.field.node.biography.field_bio_references
+    - field.field.node.biography.field_bio_see
+    - field.field.node.biography.field_bio_summary
+    - field.field.node.biography.field_dates
+    - node.type.biography
+  module:
+    - text
+    - user
+id: node.biography.default
+targetEntityType: node
+bundle: biography
+mode: default
+content:
+  field_bio_id:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_bio_nationality:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_bio_occupation:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_bio_references:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_bio_see:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_bio_summary:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_dates:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

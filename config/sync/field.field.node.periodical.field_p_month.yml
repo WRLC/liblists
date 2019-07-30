@@ -1,0 +1,19 @@
+uuid: eb56682b-269a-4419-9fc9-94a8261551de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_p_month
+    - node.type.periodical
+id: node.periodical.field_p_month
+field_name: field_p_month
+entity_type: node
+bundle: periodical
+label: Month
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

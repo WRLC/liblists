@@ -1,0 +1,22 @@
+uuid: 20ee9027-c7b4-4b57-baec-1a3236c92f81
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - aegan
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: aegan_help
+theme: aegan
+region: content
+weight: -12
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

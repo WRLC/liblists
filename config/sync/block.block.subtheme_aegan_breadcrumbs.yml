@@ -1,0 +1,22 @@
+uuid: 279e3a2e-cfd2-4a41-ae77-5107d154987c
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - subtheme_aegan
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: subtheme_aegan_breadcrumbs
+theme: subtheme_aegan
+region: header
+weight: -12
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

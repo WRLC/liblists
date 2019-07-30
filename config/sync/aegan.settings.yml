@@ -1,0 +1,46 @@
+socialicon_count: '5'
+slideshow_count: '5'
+slideshow_animation: slide
+slideshow_display: 0
+slideshow_slide_speed: '7000'
+slideshow_animation_speed: '600'
+aegan_color: default
+_core:
+  default_config_hash: 8WC1TgSq9JYHHD9R_8_azlnr-BMkH64LF2Ao7Br3kx4
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://gallaudet.png'
+favicon:
+  use_default: 1
+social_class_1: ''
+social_url_1: ''
+social_class_2: ''
+social_url_2: ''
+social_class_3: ''
+social_url_3: ''
+social_class_4: ''
+social_url_4: ''
+social_class_5: ''
+social_url_5: ''
+slideshow_style: ''
+slide_description_1: ''
+slide_image_1: {  }
+slide_url_1: ''
+slide_description_2: ''
+slide_image_2: {  }
+slide_url_2: ''
+slide_description_3: ''
+slide_image_3: {  }
+slide_url_3: ''
+slide_description_4: ''
+slide_image_4: {  }
+slide_url_4: ''
+slide_description_5: ''
+slide_image_5: {  }
+slide_url_5: ''
+slideshow_visiblity: ''

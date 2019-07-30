@@ -1,0 +1,19 @@
+uuid: 756033b1-aa84-4392-921d-b65e747268c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_p_subject
+    - node.type.periodical
+id: node.periodical.field_p_subject
+field_name: field_p_subject
+entity_type: node
+bundle: periodical
+label: Subject
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

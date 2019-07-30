@@ -1,0 +1,31 @@
+uuid: 972f9405-165f-459e-82aa-1f12b623cbcc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c666aa22-df36-4be8-a7c4-9475b1feef9d'
+  module:
+    - block_content
+    - system
+  theme:
+    - aegan
+id: aegan_biographiesbyoccupationalphapager
+theme: aegan
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:c666aa22-df36-4be8-a7c4-9475b1feef9d'
+settings:
+  id: 'block_content:c666aa22-df36-4be8-a7c4-9475b1feef9d'
+  label: 'Biographies by Occupation alpha pager '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/biographies/browse/occupation\r\n/biographies/browse/occupation/a\r\n/biographies/browse/occupation/b\r\n/biographies/browse/occupation/c\r\n/biographies/browse/occupation/d\r\n/biographies/browse/occupation/e\r\n/biographies/browse/occupation/f\r\n/biographies/browse/occupation/g\r\n/biographies/browse/occupation/h\r\n/biographies/browse/occupation/i\r\n/biographies/browse/occupation/j\r\n/biographies/browse/occupation/k\r\n/biographies/browse/occupation/l\r\n/biographies/browse/occupation/m\r\n/biographies/browse/occupation/n\r\n/biographies/browse/occupation/o\r\n/biographies/browse/occupation/p\r\n/biographies/browse/occupation/q\r\n/biographies/browse/occupation/r\r\n/biographies/browse/occupation/s\r\n/biographies/browse/occupation/t\r\n/biographies/browse/occupation/u\r\n/biographies/browse/occupation/v\r\n/biographies/browse/occupation/w\r\n/biographies/browse/occupation/x\r\n/biographies/browse/occupation/y\r\n/biographies/browse/occupation/z\r\n/biographies/browse/occupation/a/*\r\n/biographies/browse/occupation/b/*\r\n/biographies/browse/occupation/c/*\r\n/biographies/browse/occupation/d/*\r\n/biographies/browse/occupation/e/*\r\n/biographies/browse/occupation/f/*\r\n/biographies/browse/occupation/g/*\r\n/biographies/browse/occupation/h/*\r\n/biographies/browse/occupation/i/*\r\n/biographies/browse/occupation/j/*\r\n/biographies/browse/occupation/k/*\r\n/biographies/browse/occupation/l/*\r\n/biographies/browse/occupation/m/*\r\n/biographies/browse/occupation/n/*\r\n/biographies/browse/occupation/o/*\r\n/biographies/browse/occupation/p/*\r\n/biographies/browse/occupation/q/*\r\n/biographies/browse/occupation/r/*\r\n/biographies/browse/occupation/s/*\r\n/biographies/browse/occupation/t/*\r\n/biographies/browse/occupation/u/*\r\n/biographies/browse/occupation/v/*\r\n/biographies/browse/occupation/w/*\r\n/biographies/browse/occupation/x/*\r\n/biographies/browse/occupation/y/*\r\n/biographies/browse/occupation/z/*"
+    negate: false
+    context_mapping: {  }

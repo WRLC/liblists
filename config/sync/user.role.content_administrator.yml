@@ -1,0 +1,43 @@
+uuid: cfa352a2-1207-4886-94c1-0a75c6a65252
+langcode: en
+status: true
+dependencies: {  }
+id: content_administrator
+label: 'Content Administrator'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'administer nodes'
+  - 'administer search_api'
+  - 'administer url aliases'
+  - 'create biography content'
+  - 'create page content'
+  - 'create periodical content'
+  - 'create url aliases'
+  - 'delete any biography content'
+  - 'delete any page content'
+  - 'delete any periodical content'
+  - 'delete biography revisions'
+  - 'delete own biography content'
+  - 'delete own page content'
+  - 'delete own periodical content'
+  - 'delete page revisions'
+  - 'delete periodical revisions'
+  - 'edit any biography content'
+  - 'edit any page content'
+  - 'edit any periodical content'
+  - 'edit own biography content'
+  - 'edit own page content'
+  - 'edit own periodical content'
+  - 'revert all revisions'
+  - 'revert biography revisions'
+  - 'revert page revisions'
+  - 'revert periodical revisions'
+  - 'view all revisions'
+  - 'view biography revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view periodical revisions'
+  - 'view the administration theme'

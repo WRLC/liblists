@@ -1,0 +1,15 @@
+uuid: 32e86c80-6a79-4b29-8870-3c409be46bb4
+name: 'Gallaudet University Library Guide to Deaf Biographies and Index to Deaf Periodicals'
+mail: noreply@drupal8-prod.wrlc.org
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/56361
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+mail_notification: ''
