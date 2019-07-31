@@ -4,8 +4,8 @@ description: 'Allows deletion of all nodes, comments and users on a site. Useful
 package: Development
 # core: '8.x'
 
-# Information added by Drupal.org packaging script on 2018-05-17
-version: '8.x-1.0'
+# Information added by Drupal.org packaging script on 2019-07-02
+version: '8.x-1.2'
 core: '8.x'
 project: 'delete_all'
-datestamp: 1526542686
+datestamp: 1562068403

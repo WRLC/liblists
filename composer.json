@@ -23,7 +23,7 @@
         "drupal/aegan": "^1.0",
         "drupal/config_update": "^1.6",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.6.16",
+        "drupal/core": "~8.7.0",
         "drupal/delete_all": "^1.0",
         "drupal/devel": "^2.1",
         "drupal/facets": "^1.4",
@@ -34,12 +34,12 @@
         "drupal/search_api_solr": "^1.2",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
+        "webflo/drupal-core-require-dev": "~8.7.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "^8.6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
