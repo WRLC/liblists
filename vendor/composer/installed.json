@@ -2942,21 +2942,22 @@
     },
     {
         "name": "drupal/delete_all",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/delete_all.git",
-            "reference": "8.x-1.0"
+            "reference": "8.x-1.2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/delete_all-8.x-1.0.zip",
-            "reference": "8.x-1.0",
-            "shasum": "9294b0d99fd82c28ef21725de9ec572ac8ac125f"
+            "url": "https://ftp.drupal.org/files/projects/delete_all-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "9bb4758ba2960f7ed88d5715440a9c5b3894324c"
         },
         "require": {
-            "drupal/core": "~8.0"
+            "drupal/core": "~8.0",
+            "php": ">=5.6.0"
         },
         "type": "drupal-module",
         "extra": {
@@ -2964,11 +2965,16 @@
                 "dev-1.x": "1.x-dev"
             },
             "drupal": {
-                "version": "8.x-1.0",
-                "datestamp": "1560157981",
+                "version": "8.x-1.2",
+                "datestamp": "1562068385",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
                 }
             }
         },
@@ -2979,8 +2985,9 @@
         ],
         "authors": [
             {
-                "name": "Hammad Ghani",
-                "homepage": "https://www.drupal.org/user/3196009"
+                "name": "Author name",
+                "homepage": "https://www.drupal.org/user/3196009",
+                "email": "author@example.com"
             },
             {
                 "name": "coderintherye",
@@ -3011,7 +3018,7 @@
                 "homepage": "https://www.drupal.org/user/50133"
             }
         ],
-        "description": "Allows deletion of all nodes, comments and users on a site. Useful for development or prior to launching a site.",
+        "description": "This extension provides new commands for Drush.",
         "homepage": "https://www.drupal.org/project/delete_all",
         "support": {
             "source": "https://git.drupalcode.org/project/delete_all"

@@ -141,7 +141,8 @@ function drush_delete_all_delete_users() {
       $role = drush_choice($choices, dt("Choose a role to delete."));
 
       // Return if no role is chosen.
-      if ($role === 0) {
+      if ($role === 0 || $role === FALSE) {
+        drush_user_abort();
         return;
       }
       $input_roles = [$role];
@@ -204,7 +205,8 @@ function drush_delete_all_delete_content() {
       $content_type_options = drush_choice($choices, dt("Choose a content type to delete. All contents of this"));
 
       // Return if no role is chosen.
-      if ($content_type_options === 0) {
+      if ($content_type_options === 0 || $content_type_options === FALSE) {
+        drush_user_abort();
         return;
       }
       $content_type_options = [$content_type_options];
@@ -234,7 +236,6 @@ function drush_delete_all_delete_content() {
  * Drush callback to delete entities.
  */
 function drush_delete_all_delete_entities() {
-
     // Get complete list of content entity types
     $entities_info = [];
     $entities_info_extended = [];
@@ -326,6 +327,10 @@ function drush_delete_all_delete_entities() {
 
         // Get entities to delete.
         $entities_to_delete = $deleteEntity->getEntitiesToDelete($entity_type_options, $bundle_type_options, $entities_info_extended);
+
+        if ($entity_type_options == 'user') {
+            $entities_to_delete = array_diff($entities_to_delete, [0, 1]);
+        }
 
         // Get batch array.
         $batch = $deleteEntity->getEntitiesDeleteBatch($entities_to_delete, $entity_type_options);
