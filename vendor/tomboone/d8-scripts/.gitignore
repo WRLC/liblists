@@ -1,0 +1,12 @@
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+.idea
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
