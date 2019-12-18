@@ -359,44 +359,6 @@
         ]
     },
     {
-        "name": "brumann/polyfill-unserialize",
-        "version": "v1.0.4",
-        "version_normalized": "1.0.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/dbrumann/polyfill-unserialize.git",
-            "reference": "8ed1cd343ddc134a7ef649aca0aa0fe2a1b45008"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/dbrumann/polyfill-unserialize/zipball/8ed1cd343ddc134a7ef649aca0aa0fe2a1b45008",
-            "reference": "8ed1cd343ddc134a7ef649aca0aa0fe2a1b45008",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.3|^7.0"
-        },
-        "time": "2019-07-14T23:16:24+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Brumann\\Polyfill\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Denis Brumann",
-                "email": "denis.brumann@sensiolabs.de"
-            }
-        ],
-        "description": "Backports unserialize options introduced in PHP 7.0 to older PHP versions."
-    },
-    {
         "name": "chi-teck/drupal-code-generator",
         "version": "1.30.3",
         "version_normalized": "1.30.3.0",
@@ -442,6 +404,146 @@
             "GPL-2.0-or-later"
         ],
         "description": "Drupal code generator"
+    },
+    {
+        "name": "composer/ca-bundle",
+        "version": "1.2.5",
+        "version_normalized": "1.2.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/ca-bundle.git",
+            "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/ca-bundle/zipball/62e8fc2dc550e5d6d8c9360c7721662670f58149",
+            "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149",
+            "shasum": ""
+        },
+        "require": {
+            "ext-openssl": "*",
+            "ext-pcre": "*",
+            "php": "^5.3.2 || ^7.0 || ^8.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
+            "psr/log": "^1.0",
+            "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+        },
+        "time": "2019-12-11T14:44:42+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\CaBundle\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            }
+        ],
+        "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
+        "keywords": [
+            "cabundle",
+            "cacert",
+            "certificate",
+            "ssl",
+            "tls"
+        ]
+    },
+    {
+        "name": "composer/composer",
+        "version": "1.9.1",
+        "version_normalized": "1.9.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/composer.git",
+            "reference": "bb01f2180df87ce7992b8331a68904f80439dd2f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/composer/zipball/bb01f2180df87ce7992b8331a68904f80439dd2f",
+            "reference": "bb01f2180df87ce7992b8331a68904f80439dd2f",
+            "shasum": ""
+        },
+        "require": {
+            "composer/ca-bundle": "^1.0",
+            "composer/semver": "^1.0",
+            "composer/spdx-licenses": "^1.2",
+            "composer/xdebug-handler": "^1.1",
+            "justinrainbow/json-schema": "^3.0 || ^4.0 || ^5.0",
+            "php": "^5.3.2 || ^7.0",
+            "psr/log": "^1.0",
+            "seld/jsonlint": "^1.4",
+            "seld/phar-utils": "^1.0",
+            "symfony/console": "^2.7 || ^3.0 || ^4.0",
+            "symfony/filesystem": "^2.7 || ^3.0 || ^4.0",
+            "symfony/finder": "^2.7 || ^3.0 || ^4.0",
+            "symfony/process": "^2.7 || ^3.0 || ^4.0"
+        },
+        "conflict": {
+            "symfony/console": "2.8.38"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.7",
+            "phpunit/phpunit-mock-objects": "^2.3 || ^3.0"
+        },
+        "suggest": {
+            "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
+            "ext-zip": "Enabling the zip extension allows you to unzip archives",
+            "ext-zlib": "Allow gzip compression of HTTP requests"
+        },
+        "time": "2019-11-01T16:20:17+00:00",
+        "bin": [
+            "bin/composer"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.9-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\": "src/Composer"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nils Adermann",
+                "email": "naderman@naderman.de",
+                "homepage": "http://www.naderman.de"
+            },
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            }
+        ],
+        "description": "Composer helps you declare, manage and install dependencies of PHP projects. It ensures you have the right stack everywhere.",
+        "homepage": "https://getcomposer.org/",
+        "keywords": [
+            "autoload",
+            "dependency",
+            "package"
+        ]
     },
     {
         "name": "composer/installers",
@@ -627,6 +729,114 @@
             "semver",
             "validation",
             "versioning"
+        ]
+    },
+    {
+        "name": "composer/spdx-licenses",
+        "version": "1.5.2",
+        "version_normalized": "1.5.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/spdx-licenses.git",
+            "reference": "7ac1e6aec371357df067f8a688c3d6974df68fa5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/7ac1e6aec371357df067f8a688c3d6974df68fa5",
+            "reference": "7ac1e6aec371357df067f8a688c3d6974df68fa5",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.2 || ^7.0 || ^8.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 7"
+        },
+        "time": "2019-07-29T10:31:59+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\Spdx\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nils Adermann",
+                "email": "naderman@naderman.de",
+                "homepage": "http://www.naderman.de"
+            },
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            },
+            {
+                "name": "Rob Bast",
+                "email": "rob.bast@gmail.com",
+                "homepage": "http://robbast.nl"
+            }
+        ],
+        "description": "SPDX licenses list and validation library.",
+        "keywords": [
+            "license",
+            "spdx",
+            "validator"
+        ]
+    },
+    {
+        "name": "composer/xdebug-handler",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/xdebug-handler.git",
+            "reference": "cbe23383749496fe0f373345208b79568e4bc248"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/cbe23383749496fe0f373345208b79568e4bc248",
+            "reference": "cbe23383749496fe0f373345208b79568e4bc248",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.2 || ^7.0 || ^8.0",
+            "psr/log": "^1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
+        },
+        "time": "2019-11-06T16:40:04+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\XdebugHandler\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "John Stevenson",
+                "email": "john-stevenson@blueyonder.co.uk"
+            }
+        ],
+        "description": "Restarts a process without Xdebug.",
+        "keywords": [
+            "Xdebug",
+            "performance"
         ]
     },
     {
@@ -2794,24 +3004,24 @@
     },
     {
         "name": "drupal/core",
-        "version": "8.7.11",
-        "version_normalized": "8.7.11.0",
+        "version": "8.8.1",
+        "version_normalized": "8.8.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core.git",
-            "reference": "a691876294fadc2795a8add96359b5ffc109d7f2"
+            "reference": "d339279f4c4b89477e0f4a8b775eb5dcb86b3087"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/drupal/core/zipball/a691876294fadc2795a8add96359b5ffc109d7f2",
-            "reference": "a691876294fadc2795a8add96359b5ffc109d7f2",
+            "url": "https://api.github.com/repos/drupal/core/zipball/d339279f4c4b89477e0f4a8b775eb5dcb86b3087",
+            "reference": "d339279f4c4b89477e0f4a8b775eb5dcb86b3087",
             "shasum": ""
         },
         "require": {
             "asm89/stack-cors": "^1.1",
             "composer/semver": "^1.0",
-            "doctrine/annotations": "^1.2",
-            "doctrine/common": "^2.5",
+            "doctrine/annotations": "^1.4",
+            "doctrine/common": "^2.7",
             "easyrdf/easyrdf": "^0.9",
             "egulias/email-validator": "^2.0",
             "ext-date": "*",
@@ -2827,11 +3037,10 @@
             "ext-spl": "*",
             "ext-tokenizer": "*",
             "ext-xml": "*",
-            "guzzlehttp/guzzle": "^6.2.1",
+            "guzzlehttp/guzzle": "^6.3",
             "masterminds/html5": "^2.1",
-            "paragonie/random_compat": "^1.0|^2.0|^9.99.99",
             "pear/archive_tar": "^1.4.9",
-            "php": "^5.5.9|>=7.0.8",
+            "php": ">=7.0.8",
             "stack/builder": "^1.0",
             "symfony-cmf/routing": "^1.4",
             "symfony/class-loader": "~3.4.0",
@@ -2849,13 +3058,13 @@
             "symfony/validator": "~3.4.0",
             "symfony/yaml": "~3.4.5",
             "twig/twig": "^1.38.2",
-            "typo3/phar-stream-wrapper": "^2.1.1",
-            "zendframework/zend-diactoros": "^1.1",
-            "zendframework/zend-feed": "^2.4"
+            "typo3/phar-stream-wrapper": "^3.1.3",
+            "zendframework/zend-diactoros": "^1.8",
+            "zendframework/zend-feed": "^2.12"
         },
         "conflict": {
-            "drush/drush": "<8.1.10",
-            "symfony/dom-crawler": ">=4"
+            "drupal/pathauto": "<1.6",
+            "drush/drush": "<8.1.10"
         },
         "replace": {
             "drupal/action": "self.version",
@@ -2871,6 +3080,7 @@
             "drupal/book": "self.version",
             "drupal/breakpoint": "self.version",
             "drupal/ckeditor": "self.version",
+            "drupal/claro": "self.version",
             "drupal/classy": "self.version",
             "drupal/color": "self.version",
             "drupal/comment": "self.version",
@@ -2890,6 +3100,7 @@
             "drupal/core-discovery": "self.version",
             "drupal/core-event-dispatcher": "self.version",
             "drupal/core-file-cache": "self.version",
+            "drupal/core-file-security": "self.version",
             "drupal/core-filesystem": "self.version",
             "drupal/core-gettext": "self.version",
             "drupal/core-graph": "self.version",
@@ -2917,6 +3128,7 @@
             "drupal/forum": "self.version",
             "drupal/hal": "self.version",
             "drupal/help": "self.version",
+            "drupal/help_topics": "self.version",
             "drupal/history": "self.version",
             "drupal/image": "self.version",
             "drupal/inline_form_errors": "self.version",
@@ -2939,6 +3151,7 @@
             "drupal/options": "self.version",
             "drupal/page_cache": "self.version",
             "drupal/path": "self.version",
+            "drupal/path_alias": "self.version",
             "drupal/quickedit": "self.version",
             "drupal/rdf": "self.version",
             "drupal/responsive_image": "self.version",
@@ -2967,53 +3180,35 @@
             "drupal/workflows": "self.version",
             "drupal/workspaces": "self.version"
         },
-        "require-dev": {
-            "behat/mink": "1.7.x-dev",
-            "behat/mink-goutte-driver": "^1.2",
-            "behat/mink-selenium2-driver": "1.3.x-dev",
-            "drupal/coder": "^8.3.1",
-            "jcalderonzumba/gastonjs": "^1.0.2",
-            "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
-            "justinrainbow/json-schema": "^5.2",
-            "mikey179/vfsstream": "^1.2",
-            "phpspec/prophecy": "^1.7",
-            "phpunit/phpunit": "^4.8.35 || ^6.5",
-            "symfony/css-selector": "^3.4.0",
-            "symfony/debug": "^3.4.0",
-            "symfony/phpunit-bridge": "^3.4.3"
-        },
-        "time": "2019-12-18T08:55:29+00:00",
+        "time": "2019-12-18T10:34:03+00:00",
         "type": "drupal-core",
         "extra": {
-            "merge-plugin": {
-                "require": [
-                    "core/lib/Drupal/Component/Annotation/composer.json",
-                    "core/lib/Drupal/Component/Assertion/composer.json",
-                    "core/lib/Drupal/Component/Bridge/composer.json",
-                    "core/lib/Drupal/Component/ClassFinder/composer.json",
-                    "core/lib/Drupal/Component/Datetime/composer.json",
-                    "core/lib/Drupal/Component/DependencyInjection/composer.json",
-                    "core/lib/Drupal/Component/Diff/composer.json",
-                    "core/lib/Drupal/Component/Discovery/composer.json",
-                    "core/lib/Drupal/Component/EventDispatcher/composer.json",
-                    "core/lib/Drupal/Component/FileCache/composer.json",
-                    "core/lib/Drupal/Component/FileSystem/composer.json",
-                    "core/lib/Drupal/Component/Gettext/composer.json",
-                    "core/lib/Drupal/Component/Graph/composer.json",
-                    "core/lib/Drupal/Component/HttpFoundation/composer.json",
-                    "core/lib/Drupal/Component/PhpStorage/composer.json",
-                    "core/lib/Drupal/Component/Plugin/composer.json",
-                    "core/lib/Drupal/Component/ProxyBuilder/composer.json",
-                    "core/lib/Drupal/Component/Render/composer.json",
-                    "core/lib/Drupal/Component/Serialization/composer.json",
-                    "core/lib/Drupal/Component/Transliteration/composer.json",
-                    "core/lib/Drupal/Component/Utility/composer.json",
-                    "core/lib/Drupal/Component/Uuid/composer.json",
-                    "core/lib/Drupal/Component/Version/composer.json"
-                ],
-                "recurse": false,
-                "replace": false,
-                "merge-extra": false
+            "drupal-scaffold": {
+                "file-mapping": {
+                    "[project-root]/.editorconfig": "assets/scaffold/files/editorconfig",
+                    "[project-root]/.gitattributes": "assets/scaffold/files/gitattributes",
+                    "[web-root]/.csslintrc": "assets/scaffold/files/csslintrc",
+                    "[web-root]/.eslintignore": "assets/scaffold/files/eslintignore",
+                    "[web-root]/.eslintrc.json": "assets/scaffold/files/eslintrc.json",
+                    "[web-root]/.ht.router.php": "assets/scaffold/files/ht.router.php",
+                    "[web-root]/.htaccess": "assets/scaffold/files/htaccess",
+                    "[web-root]/example.gitignore": "assets/scaffold/files/example.gitignore",
+                    "[web-root]/index.php": "assets/scaffold/files/index.php",
+                    "[web-root]/INSTALL.txt": "assets/scaffold/files/drupal.INSTALL.txt",
+                    "[web-root]/README.txt": "assets/scaffold/files/drupal.README.txt",
+                    "[web-root]/robots.txt": "assets/scaffold/files/robots.txt",
+                    "[web-root]/update.php": "assets/scaffold/files/update.php",
+                    "[web-root]/web.config": "assets/scaffold/files/web.config",
+                    "[web-root]/sites/README.txt": "assets/scaffold/files/sites.README.txt",
+                    "[web-root]/sites/development.services.yml": "assets/scaffold/files/development.services.yml",
+                    "[web-root]/sites/example.settings.local.php": "assets/scaffold/files/example.settings.local.php",
+                    "[web-root]/sites/example.sites.php": "assets/scaffold/files/example.sites.php",
+                    "[web-root]/sites/default/default.services.yml": "assets/scaffold/files/default.services.yml",
+                    "[web-root]/sites/default/default.settings.php": "assets/scaffold/files/default.settings.php",
+                    "[web-root]/modules/README.txt": "assets/scaffold/files/modules.README.txt",
+                    "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
+                    "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
+                }
             }
         },
         "installation-source": "dist",
@@ -6904,6 +7099,103 @@
         "homepage": "https://github.com/sebastianbergmann/version"
     },
     {
+        "name": "seld/jsonlint",
+        "version": "1.7.2",
+        "version_normalized": "1.7.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Seldaek/jsonlint.git",
+            "reference": "e2e5d290e4d2a4f0eb449f510071392e00e10d19"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/e2e5d290e4d2a4f0eb449f510071392e00e10d19",
+            "reference": "e2e5d290e4d2a4f0eb449f510071392e00e10d19",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3 || ^7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
+        },
+        "time": "2019-10-24T14:27:39+00:00",
+        "bin": [
+            "bin/jsonlint"
+        ],
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Seld\\JsonLint\\": "src/Seld/JsonLint/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            }
+        ],
+        "description": "JSON Linter",
+        "keywords": [
+            "json",
+            "linter",
+            "parser",
+            "validator"
+        ]
+    },
+    {
+        "name": "seld/phar-utils",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Seldaek/phar-utils.git",
+            "reference": "7009b5139491975ef6486545a39f3e6dad5ac30a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/7009b5139491975ef6486545a39f3e6dad5ac30a",
+            "reference": "7009b5139491975ef6486545a39f3e6dad5ac30a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "time": "2015-10-13T18:44:15+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Seld\\PharUtils\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be"
+            }
+        ],
+        "description": "PHAR file format utilities, for when PHP phars you up",
+        "keywords": [
+            "phra"
+        ]
+    },
+    {
         "name": "solarium/solarium",
         "version": "3.8.1",
         "version_normalized": "3.8.1.0",
@@ -7992,6 +8284,70 @@
         ],
         "description": "Symfony HttpKernel Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/lock",
+        "version": "v3.4.36",
+        "version_normalized": "3.4.36.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/lock.git",
+            "reference": "d6ccc33dfc5b7c8e1f59c228db0be36705fbffba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/lock/zipball/d6ccc33dfc5b7c8e1f59c228db0be36705fbffba",
+            "reference": "d6ccc33dfc5b7c8e1f59c228db0be36705fbffba",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "psr/log": "~1.0",
+            "symfony/polyfill-php70": "~1.0"
+        },
+        "require-dev": {
+            "predis/predis": "~1.0"
+        },
+        "time": "2019-09-23T14:31:27+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Lock\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jérémy Derussé",
+                "email": "jeremy@derusse.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Lock Component",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "cas",
+            "flock",
+            "locking",
+            "mutex",
+            "redlock",
+            "semaphore"
+        ]
     },
     {
         "name": "symfony/phpunit-bridge",
@@ -9122,33 +9478,37 @@
     },
     {
         "name": "typo3/phar-stream-wrapper",
-        "version": "v2.1.3",
-        "version_normalized": "2.1.3.0",
+        "version": "v3.1.3",
+        "version_normalized": "3.1.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/TYPO3/phar-stream-wrapper.git",
-            "reference": "e8a656d72028b97ab9f61ed993734f3cded02eeb"
+            "reference": "586ff60beea128e069a5dc271d3d8133a9bc460a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/e8a656d72028b97ab9f61ed993734f3cded02eeb",
-            "reference": "e8a656d72028b97ab9f61ed993734f3cded02eeb",
+            "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/586ff60beea128e069a5dc271d3d8133a9bc460a",
+            "reference": "586ff60beea128e069a5dc271d3d8133a9bc460a",
             "shasum": ""
         },
         "require": {
-            "brumann/polyfill-unserialize": "^1.0",
             "ext-json": "*",
-            "php": "^5.3.3|^7.0"
+            "php": "^7.0"
         },
         "require-dev": {
             "ext-xdebug": "*",
-            "phpunit/phpunit": "^4.8.36"
+            "phpunit/phpunit": "^6.5"
         },
         "suggest": {
             "ext-fileinfo": "For PHP builtin file type guessing, otherwise uses internal processing"
         },
-        "time": "2019-10-18T11:59:10+00:00",
+        "time": "2019-10-18T11:57:16+00:00",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "v3.x-dev"
+            }
+        },
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
@@ -9223,36 +9583,41 @@
     },
     {
         "name": "webflo/drupal-core-require-dev",
-        "version": "8.7.11",
-        "version_normalized": "8.7.11.0",
+        "version": "8.8.1",
+        "version_normalized": "8.8.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/webflo/drupal-core-require-dev.git",
-            "reference": "0230f86e2813d8a44ffa3e497036d6990591c61f"
+            "reference": "5685684fd06541b8e4a453371542fe04455a56d2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/0230f86e2813d8a44ffa3e497036d6990591c61f",
-            "reference": "0230f86e2813d8a44ffa3e497036d6990591c61f",
+            "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/5685684fd06541b8e4a453371542fe04455a56d2",
+            "reference": "5685684fd06541b8e4a453371542fe04455a56d2",
             "shasum": ""
         },
         "require": {
             "behat/mink": "1.7.x-dev",
             "behat/mink-goutte-driver": "^1.2",
             "behat/mink-selenium2-driver": "1.3.x-dev",
-            "drupal/coder": "^8.3.1",
-            "drupal/core": "8.7.11",
+            "composer/composer": "^1.9.1",
+            "drupal/coder": "^8.3.2",
+            "drupal/core": "8.8.1",
             "jcalderonzumba/gastonjs": "^1.0.2",
             "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
             "justinrainbow/json-schema": "^5.2",
-            "mikey179/vfsstream": "^1.2",
+            "mikey179/vfsstream": "^1.6.8",
             "phpspec/prophecy": "^1.7",
-            "phpunit/phpunit": "^4.8.35 || ^6.5",
+            "phpunit/phpunit": "^6.5 || ^7",
+            "symfony/browser-kit": "^3.4.0",
             "symfony/css-selector": "^3.4.0",
             "symfony/debug": "^3.4.0",
+            "symfony/filesystem": "~3.4.0",
+            "symfony/finder": "~3.4.0",
+            "symfony/lock": "~3.4.0",
             "symfony/phpunit-bridge": "^3.4.3"
         },
-        "time": "2019-12-18T19:01:45+00:00",
+        "time": "2019-12-18T19:01:47+00:00",
         "type": "metapackage",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
