@@ -164,6 +164,8 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
             'Drupal\\Console\\Composer\\Plugin\\' => 31,
             'Drupal\\Console\\' => 15,
             'Drupal\\Component\\' => 17,
+            'Drupal\\' => 7,
+            'DrupalPractice\\' => 15,
             'DrupalComposer\\DrupalScaffold\\' => 30,
             'DrupalCodeGenerator\\' => 20,
             'Dotenv\\' => 7,
@@ -518,6 +520,14 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         array (
             0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component',
         ),
+        'Drupal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal/coder/coder_sniffer/Drupal',
+        ),
+        'DrupalPractice\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal/coder/coder_sniffer/DrupalPractice',
+        ),
         'DrupalComposer\\DrupalScaffold\\' => 
         array (
             0 => __DIR__ . '/..' . '/drupal-composer/drupal-scaffold/src',
@@ -672,14 +682,6 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         ),
         'D' => 
         array (
-            'Drupal\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/drupal/coder/coder_sniffer/Drupal',
-            ),
-            'DrupalPractice\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/drupal/coder/coder_sniffer/DrupalPractice',
-            ),
             'Doctrine\\Common\\Collections\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/collections/lib',

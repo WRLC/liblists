@@ -12,8 +12,6 @@ return array(
     'Stack' => array($vendorDir . '/stack/builder/src'),
     'Solarium\\' => array($vendorDir . '/solarium/solarium/library'),
     'EasyRdf_' => array($vendorDir . '/easyrdf/easyrdf/lib'),
-    'Drupal\\' => array($vendorDir . '/drupal/coder/coder_sniffer/Drupal'),
-    'DrupalPractice\\' => array($vendorDir . '/drupal/coder/coder_sniffer/DrupalPractice'),
     'Doctrine\\Common\\Collections\\' => array($vendorDir . '/doctrine/collections/lib'),
     'Dflydev\\PlaceholderResolver' => array($vendorDir . '/dflydev/placeholder-resolver/src'),
     'Dflydev\\DotAccessData' => array($vendorDir . '/dflydev/dot-access-data/src'),
