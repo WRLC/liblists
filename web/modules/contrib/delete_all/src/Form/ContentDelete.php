@@ -2,10 +2,10 @@
 
 namespace Drupal\delete_all\Form;
 
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\delete_all\Controller\ContentDeleteController;
-use Drupal\Core\Entity\EntityTypeManager;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -18,7 +18,7 @@ class ContentDelete extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public function __construct(EntityTypeManager $entityTypeManager) {
+  public function __construct(EntityTypeManagerInterface $entityTypeManager) {
     $this->nodeType = $entityTypeManager->getStorage('node_type');
   }
 
