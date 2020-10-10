@@ -176,7 +176,7 @@ class Patches implements PluginInterface, EventSubscriberInterface {
     $operations = $event->getOperations();
     $this->io->write('<info>Gathering patches for dependencies. This might take a minute.</info>');
     foreach ($operations as $operation) {
-      if ($operation->getJobType() == 'install' || $operation->getJobType() == 'update') {
+      if ($operation instanceof InstallOperation || $operation instanceof UpdateOperation) {
         $package = $this->getPackageFromOperation($operation);
         $extra = $package->getExtra();
         if (isset($extra['patches'])) {
@@ -369,7 +369,14 @@ class Patches implements PluginInterface, EventSubscriberInterface {
 
       // Download file from remote filesystem to this location.
       $hostname = parse_url($patch_url, PHP_URL_HOST);
-      $downloader->copy($hostname, $patch_url, $filename, FALSE);
+
+      try {
+        $downloader->copy($hostname, $patch_url, $filename, false);
+      } catch (\Exception $e) {
+        // In case of an exception, retry once as the download might
+        // have failed due to intermittent network issues.
+        $downloader->copy($hostname, $patch_url, $filename, false);
+      }
     }
 
     // The order here is intentional. p1 is most likely to apply with git apply.
@@ -547,5 +554,19 @@ class Patches implements PluginInterface, EventSubscriberInterface {
     }
     return $patched;
   }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function deactivate(Composer $composer, IOInterface $io)
+    {
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function uninstall(Composer $composer, IOInterface $io)
+    {
+    }
 
 }

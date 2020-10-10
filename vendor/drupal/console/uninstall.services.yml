@@ -4,11 +4,15 @@ services:
     arguments: ['@app.root', '@console.configuration_manager']
   console.extension_manager:
     class: Drupal\Console\Extension\Manager
-    arguments: ['@console.site', '@http_client', '@app.root']
+    arguments: ['@console.site', '@http_client', '@app.root', '@extension.list.module']
   # Commands
   console.server:
     class: Drupal\Console\Command\ServerCommand
     arguments: ['@app.root', '@console.configuration_manager']
+    tags:
+      - { name: drupal.command }
+  console.database_client:
+    class: Drupal\Console\Command\Database\ClientCommand
     tags:
       - { name: drupal.command }
   console.database_add:
