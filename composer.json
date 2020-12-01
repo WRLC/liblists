@@ -33,7 +33,7 @@
         "drupal/google_analytics": "^2.2",
         "drupal/pathauto": "^1.1",
         "drupal/search_api": "^1.13",
-        "drupal/search_api_solr": "^1.2",
+        "drupal/search_api_solr": "^4.1",
         "drush/drush": "^9.0.0",
         "tomboone/d8-scripts": "^0.1.0",
         "vlucas/phpdotenv": "^2.4",
