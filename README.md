@@ -52,7 +52,7 @@ Then copy the files to your local installation:<br />
 To sync the database, first get an sql-dump file from the production server:<br />
 `drush sql-dump > ~/liblists.sql`
 
-Then copy that dump file to /Volumes/Common/lando/liblists/liblists.sql` (again overwriting the existing file).
+Then copy that dump file to `/Volumes/Common/lando/liblists/liblists.sql` (again overwriting the existing file).
 
 Finally, import the database dump into your local copy of the site:<br />
 `cp /Volumes/Common/lando/liblists/liblists.sql .`<br />
