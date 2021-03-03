@@ -33,7 +33,7 @@
         "drupal/facets": "^1.4",
         "drupal/features": "^3.8",
         "drupal/git_deploy": "^2.3",
-        "drupal/google_analytics": "^2.2",
+        "drupal/google_analytics": "^3.0",
         "drupal/pathauto": "^1.1",
         "drupal/search_api": "^1.13",
         "drupal/search_api_solr": "^4.1",
