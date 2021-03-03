@@ -1,8 +1,9 @@
 name: 'Aegan'
 type: theme
-description: 'Aegan is a Responsive Drupal 8 business theme, Developed by <a href="http://dropthemes.in">Dropthemes.in</a>.'
+description: 'Aegan is a Responsive Drupal 8 | 9 business theme, Developed by <a href="https://quilltez.com">Quilltez</a>.'
 base theme: classy
-# core: 8.x
+core: 8.x
+core_version_requirement: ^8 || ^9
 libraries:
   - aegan/aegan-bootstrap
   - aegan/global-css
@@ -36,8 +37,7 @@ features:
   - 'main_menu'
   - 'secondary_menu'
 
-# Information added by Drupal.org packaging script on 2016-09-12
-version: '8.x-1.0'
-core: '8.x'
+# Information added by Drupal.org packaging script on 2021-02-28
+version: '8.x-1.1'
 project: 'aegan'
-datestamp: 1473665357
+datestamp: 1614542689
