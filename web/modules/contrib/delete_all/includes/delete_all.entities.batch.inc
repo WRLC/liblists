@@ -59,6 +59,6 @@ function delete_all_entities_batch_delete($entities = FALSE, $entity_type, &$con
  */
 function delete_all_entities_batch_delete_finished($success, $results, $operations) {
     if ($success) {
-        drupal_set_message(t('Deleted @count entities.', ['@count' => $results['count']]));
+        \Drupal::messenger()->addMessage(t('Deleted @count entities.', ['@count' => $results['count']]));
     }
 }

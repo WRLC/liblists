@@ -108,7 +108,7 @@ class ContentDelete extends FormBase {
       batch_set($batch);
     }
     else {
-      drupal_set_message($this->t('No node found'));
+      $this->messenger()->addMessage($this->t('No node found'));
     }
   }
 

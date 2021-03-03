@@ -80,6 +80,6 @@ function delete_all_content_batch_delete($nodes = FALSE, &$context) {
  */
 function delete_all_content_batch_delete_finished($success, $results, $operations) {
   if ($success) {
-    drupal_set_message(t('Deleted @node_count nodes.', ['@node_count' => $results['node_count']]));
+    \Drupal::messenger()->addMessage(t('Deleted @node_count nodes.', ['@node_count' => $results['node_count']]));
   }
 }

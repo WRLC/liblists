@@ -196,7 +196,7 @@ function drush_delete_all_delete_content() {
     // Output all content types on screen and ask user to choose one.
     else {
       $content_type_options = [];
-      $content_types = node_type_get_types();
+      $content_types = \Drupal::entityTypeManager()->getStorage('node_type')->loadMultiple();
 
       foreach ($content_types as $content_type_machine_name => $content_type) {
         $choices[$content_type_machine_name] = $content_type->label();
@@ -288,7 +288,7 @@ function drush_delete_all_delete_entities() {
 
 
     $bundles_info = ['all'=>'All'];
-    $bundle_definitions = entity_get_bundles($entity_type_options);
+    $bundle_definitions = \Drupal::service('entity_type.bundle.info')->getAllBundleInfo($entity_type_options);
 
     if ($bundle_definitions) {
         foreach ($bundle_definitions as $id => $definition) {

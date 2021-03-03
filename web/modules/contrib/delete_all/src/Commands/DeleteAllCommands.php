@@ -7,6 +7,8 @@ use Drupal\delete_all\Controller\ContentDeleteController;
 use Drupal\delete_all\Controller\EntityDeleteController;
 use Drupal\delete_all\Controller\UserDeleteController;
 use Drush\Exceptions\UserAbortException;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
 
 /**
  * A Drush commandfile.
@@ -20,6 +22,28 @@ use Drush\Exceptions\UserAbortException;
  *   - http://cgit.drupalcode.org/devel/tree/drush.services.yml
  */
 class DeleteAllCommands extends DrushCommands {
+
+  /**
+   * The entity type manager.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   */
+  protected $entityTypeManager;
+
+  /**
+   * The entity type bundle info.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeBundleInfoInterface;
+   */
+  protected $entityTypeBundleInfo;
+
+  /**
+   * {@inheritdoc}
+   */
+  public function __construct(EntityTypeManagerInterface $entity_type_manager, EntityTypeBundleInfoInterface $entity_type_bundle_info) {
+    $this->entityTypeManager = $entity_type_manager;
+    $this->entityTypeBundleInfo = $entity_type_bundle_info;
+  }
 
   /**
    * Delete users.
@@ -129,7 +153,7 @@ class DeleteAllCommands extends DrushCommands {
       // Output all content types on screen and ask user to choose one.
       else {
         $content_type_options = [];
-        $content_types = node_type_get_types();
+        $content_types = $this->entityTypeManager->getStorage('node_type')->loadMultiple();
 
         foreach ($content_types as $content_type_machine_name => $content_type) {
           $choices[$content_type_machine_name] = $content_type->label();
@@ -227,7 +251,7 @@ class DeleteAllCommands extends DrushCommands {
     }
 
     $bundles_info = ['all' => 'All'];
-    $bundle_definitions = entity_get_bundles($entity_type_options);
+    $bundle_definitions = $this->entityTypeBundleInfo->getBundleInfo($entity_type_options);
 
     if ($bundle_definitions) {
       foreach ($bundle_definitions as $id => $definition) {

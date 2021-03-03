@@ -10,6 +10,7 @@
  */
 function delete_all_users_batch_delete($users = FALSE, &$context) {
   $db = \Drupal::database();
+  $entity_type_manager = \Drupal::entityTypeManager();
 
   if ($users === FALSE) {
     if (!isset($context['sandbox']['progress'])) {
@@ -50,10 +51,10 @@ function delete_all_users_batch_delete($users = FALSE, &$context) {
   if ($context['sandbox']['max'] + 1 >0) {
     if (!empty($users_to_delete)) {
       foreach ($users_to_delete as $uid) {
-        $account = user_load($uid);
+        $account = $entity_type_manager->getStorage('user')->load($uid);
 
         // Delete user.
-        user_delete($uid);
+        $entity_type_manager->getStorage('user')->load($uid)->delete();
         $context['message'] = t('Deleting user with uid %uid', ['%uid' => $uid]);
         $context['sandbox']['current_uid'] = $uid;
         $context['sandbox']['progress']++;
@@ -79,6 +80,6 @@ function delete_all_users_batch_delete($users = FALSE, &$context) {
  */
 function delete_all_users_batch_delete_finished($success, $results, $operations) {
   if ($success) {
-    drupal_set_message(t('Deleted @user_count users.', ['@user_count' => $results['user_count']]));
+    \Drupal::messenger()->addMessage(t('Deleted @user_count users.', ['@user_count' => $results['user_count']]));
   }
 }
