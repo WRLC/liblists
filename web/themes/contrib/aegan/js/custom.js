@@ -1,5 +1,5 @@
 // Can also be used with $(document).ready()
-jQuery(window).load(function() {
+jQuery(window).on('load', function() {
   var animation = drupalSettings.aegan.flexslider.animation;
   var slideSpeed = drupalSettings.aegan.flexslider.slide_speed;
   var animationSpeed = drupalSettings.aegan.flexslider.animation_speed;

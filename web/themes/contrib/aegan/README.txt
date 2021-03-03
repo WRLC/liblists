@@ -1,6 +1,10 @@
 About Aegan Theme
 ====================
-Aegan is a Responsive bootstrap based drupal 8 business theme, ts very light weight with modern look and feel. Business's clean layout and light weight code make it a great theme for small or medium-sized business to get up and running quickly.
+Aegan is a Responsive bootstrap based drupal 8 business theme,
+it's very light weight with modern look and feel.
+Business's clean layout and light weight code make it a great
+theme for small or medium-sized business to get up and running quickly.
+
   Based on Bootstrap
   Customizable Slideshow
   Customizable Social icons
@@ -15,7 +19,8 @@ Aegan is a Responsive bootstrap based drupal 8 business theme, ts very light wei
 
 Browser compatibility:
 =====================
-The theme has been tested on following browsers. IE7+, Firefox, Google Chrome, Opera.
+The theme has been tested on following browsers. IE7+, Firefox, Google Chrome,
+Opera.
 
 Drupal compatibility:
 =====================
