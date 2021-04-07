@@ -26,7 +26,6 @@
         "drupal/aegan": "^1.0",
         "drupal/composer_deploy": "^1.6",
         "drupal/config_update": "^1.6",
-        "drupal/console": "^1.0.2",
         "drupal/core": "~8.9",
         "drupal/delete_all": "^2.0",
         "drupal/devel": "^2.1",

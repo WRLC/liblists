@@ -13,8 +13,8 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -38,9 +38,8 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         '786bf90caabc9e09b6ad4cc5ca8f0e30' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_uploaded_files.legacy.php',
         '751a5a3f463e4be759be31748b61737c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/parse_cookie_header.legacy.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '952683d815ff0a7bf322b93c0be7e4e4' => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src/bootstrap.php',
-        '5a12a5271c58108e0aa33355e6ac54ea' => __DIR__ . '/..' . '/drupal/console-core/src/functions.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'd511210698f02d87ca48e3972f64323e' => __DIR__ . '/../..' . '/load.environment.php',
     );
 
@@ -109,13 +108,11 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
-            'Symfony\\Component\\Config\\' => 25,
             'Symfony\\Component\\ClassLoader\\' => 30,
             'Symfony\\Component\\BrowserKit\\' => 29,
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
             'Symfony\\Bridge\\PhpUnit\\' => 23,
-            'Stecman\\Component\\Symfony\\Console\\BashCompletion\\' => 49,
             'Solarium\\' => 9,
             'SelfUpdate\\' => 11,
             'Seld\\PharUtils\\' => 15,
@@ -177,9 +174,6 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
             'Drush\\' => 6,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
-            'Drupal\\Console\\Core\\' => 20,
-            'Drupal\\Console\\Composer\\Plugin\\' => 31,
-            'Drupal\\Console\\' => 15,
             'Drupal\\Component\\' => 17,
             'Drupal\\' => 7,
             'DrupalPractice\\' => 15,
@@ -221,7 +215,6 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         'A' => 
         array (
             'Asm89\\Stack\\' => 12,
-            'Alchemy\\Zippy\\' => 14,
         ),
     );
 
@@ -380,10 +373,6 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Symfony\\Component\\Config\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/config',
-        ),
         'Symfony\\Component\\ClassLoader\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/class-loader',
@@ -403,10 +392,6 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         'Symfony\\Bridge\\PhpUnit\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/phpunit-bridge',
-        ),
-        'Stecman\\Component\\Symfony\\Console\\BashCompletion\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/stecman/symfony-console-completion/src',
         ),
         'Solarium\\' => 
         array (
@@ -545,18 +530,6 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         array (
             0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core',
         ),
-        'Drupal\\Console\\Core\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/drupal/console-core/src',
-        ),
-        'Drupal\\Console\\Composer\\Plugin\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/drupal/console-extend-plugin/src',
-        ),
-        'Drupal\\Console\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/drupal/console/src',
-        ),
         'Drupal\\Component\\' => 
         array (
             0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component',
@@ -690,10 +663,6 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         array (
             0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
         ),
-        'Alchemy\\Zippy\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/alchemy/zippy/src',
-        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -734,17 +703,9 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
         ),
         'D' => 
         array (
-            'Dflydev\\PlaceholderResolver' => 
-            array (
-                0 => __DIR__ . '/..' . '/dflydev/placeholder-resolver/src',
-            ),
             'Dflydev\\DotAccessData' => 
             array (
                 0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
-            ),
-            'Dflydev\\DotAccessConfiguration' => 
-            array (
-                0 => __DIR__ . '/..' . '/dflydev/dot-access-configuration/src',
             ),
         ),
         'C' => 
@@ -768,6 +729,7 @@ class ComposerStaticInit121ff67aa4348059f81281f845256f7d
     );
 
     public static $classMap = array (
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Drupal' => __DIR__ . '/../..' . '/web/core/lib/Drupal.php',
         'DrupalFinder\\DrupalFinder' => __DIR__ . '/..' . '/webflo/drupal-finder/src/DrupalFinder.php',
         'DrupalProject\\composer\\ScriptHandler' => __DIR__ . '/../..' . '/scripts/composer/ScriptHandler.php',
